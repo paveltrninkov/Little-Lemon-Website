@@ -36,3 +36,162 @@
     transform: rotate(360deg);
   }
 }
+
+/* CSS */
+
+/* Global */
+
+body{
+  font-family: "markazi text";
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover{
+  background-color: #495E57;
+  border-radius: 8px;
+}
+
+button:hover{
+  background-color: #EE9972;
+  color: #000;
+  cursor: pointer;
+}
+
+body{
+  min-width: 1000px;
+}
+
+/* Navigation */
+
+nav ul {
+  text-decoration: none;
+  padding-left: 10%
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px 2%;
+  width: 15%;
+  font-size: 1.1vw;
+}
+
+nav ul li img{
+  width: 10%;
+}
+
+nav ul li:first-child{
+  margin: 1%;
+}
+
+nav a{
+  padding: 5px 10px;
+}
+
+/* Header */
+
+header {
+  background-color: #495E57;
+  display: flex;
+  padding: 20px;
+}
+
+header img{
+  position: absolute;
+  top: 15%;
+  left: 60%;
+  width: 30%;
+  border-radius: 10px;
+}
+
+header p{
+  width: 30%;
+}
+
+header h1, header h2, header p, header button{
+  margin-left: 10%;
+}
+
+button {
+  background-color: #F4CE14;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Main */
+
+main {
+  padding:5% 11%;
+}
+
+.Specials{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.Specials button{
+  height: 50%;
+  margin-top: 3%;
+}
+
+.Menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Menu div{
+  background-color: #EDEFEE;
+  border-radius: 8px;;
+  width: 20rem;
+  height: auto;
+}
+
+.Menu img{
+  height: 13.3rem;
+  border-radius: 8px;
+}
+
+.Menu:last-child img{
+  width: 20rem;
+}
+
+.Menu h3{
+  margin: 10px 0px 0px 10px;
+}
+
+.Menu p{
+   margin: 5px 10px;
+}
+
+.Menu a{
+  padding: 5px 10px;
+  background-color: #F4CE14;
+  color: #000;
+  border-radius: 8px;
+}
+
+.Menu a:hover{
+  background-color: #495E57;
+  color: #fff;
+}
