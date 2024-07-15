@@ -1,5 +1,5 @@
 import react from 'react'
-import Restaurant from '../Assets/restaurant.jpg'
+import Restaurant from '../../Assets/restaurant.jpg'
 
 const Header = () => {
     return (
