@@ -1,38 +1,242 @@
-.App {
-  text-align: center;
+/*Screen*/
+/* Global */
+
+body{
+  font-family: "markazi text";
+  min-width: 400px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p, htmlLabel {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-weight: 700;
+  font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover{
+  background-color: #495E57;
+  border-radius: 8px;
+}
+
+button:hover{
+  background-color: #EE9972;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Navigation */
+
+nav ul {
+  text-decoration: none;
+  padding-left: 10%
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px 2%;
+  width: 15%;
+  font-size: 1.1vw;
+}
+
+nav ul li img{
+  width: 10%;
+}
+
+nav ul li:first-child{
+  margin: 1%;
+}
+
+nav a{
+  padding: 5px 10px;
+}
+
+/* Header */
+
+header {
+  background-color: #495E57;
+  padding: 20px;
+}
+
+header img{
+  position: absolute;
+  top: 15%;
+  left: 60%;
+  width: 30%;
+  min-width: 300px;
+  border-radius: 10px;
+}
+
+header p{
+  width: 35%;
+}
+
+header h1, header h2, header p, header button{
+  margin-left: 10%;
+}
+
+button {
+  background-color: #F4CE14;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Main */
+
+main {
+  padding:5% 11%;
+}
+
+.Specials{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.Specials button{
+  height: 50%;
+  margin-top: 3%;
+}
+
+.Menu {
   display: flex;
+  justify-content: space-between;
+}
+
+.Menu div{
+  background-color: #EDEFEE;
+  border-radius: 8px;;
+  width: 20rem;
+  height: 59vh;
+}
+
+.Menu img{
+  height: 13.3rem;
+  border-radius: 8px;
+}
+
+.Menu:last-child img{
+  width: 20rem;
+}
+
+.Menu h3{
+  margin: 10px 0px 0px 10px;
+}
+
+.Menu p{
+   margin: 5px 10px;
+   padding: 10px;
+}
+
+.Menu a{
+  padding: 5px 10px;
+  background-color: #F4CE14;
+  color: #000;
+  border-radius: 8px;
+  margin: 10px 15px;
+}
+
+.Menu a:hover{
+  background-color: #495E57;
+  color: #fff;
+}
+
+/* Booking CSS */
+
+.BookingHeader {
+  background-color: #fff;
+  height: 30%;
+  display: block;
+  padding: 10px;
+}
+
+.BookingForm {
+  padding: 10px;
+}
+
+.BookingForm form {
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0px auto;
+  width: 15%;
+  padding: 1% 15%;
 }
 
-.App-link {
-  color: #61dafb;
+.BookingForm form htmlLabel {
+  margin-top: 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.BookingForm input[type=submit] {
+  background-color: #F4CE14;
+  border: 0px solid black;
+  border-radius: 8px;
+  padding: 2%;
+  margin-top: 5%;
+}
+
+.BookingForm input[type=submit]:hover {
+  background-color: #495E57;
+  color: #fff;
+  cursor: pointer;
+}
+
+.BookingForm input[type=select] {
+  
+}
+
+/*Mobile*/
+@media only screen and (max-width: 600px){
+  nav img {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  header img {
+    display: none;
+  }
+}
+
+/* Tablet or larger screens */
+@media only screen and (max-width: 1050px) {
+  nav img {
+    display: none;
+  }
+
+  header img {
+    display: none;
+  }
+
+  header p {
+    width: 70vw;
+  }
+
+  .Specials {
+    display: block;
+  }
+
+  .Menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .Menu div {
+    margin-bottom: 5%;
+    border: 0.5px solid #000;
   }
 }
